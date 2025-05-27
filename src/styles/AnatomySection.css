@@ -1,0 +1,48 @@
+.anatomy-section {
+  position: relative;
+  background: rgb(226, 226, 226);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  min-height: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.anatomy-section img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+/* Tablet (≤1024px) */
+@media (max-width: 1024px) {
+  .anatomy-section {
+    padding: 16px;
+  }
+}
+
+/* Mobile (≤768px) */
+@media (max-width: 768px) {
+  .anatomy-section {
+    padding: 12px;
+    min-height: auto;
+  }
+
+  .anatomy-section img {
+    max-width: 150px;
+  }
+}
+
+/* Small Mobile (≤480px) */
+@media (max-width: 480px) {
+  .anatomy-section {
+    padding: 10px;
+  }
+
+  .anatomy-section img {
+    max-width: 120px;
+  }
+}

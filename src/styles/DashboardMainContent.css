@@ -1,0 +1,32 @@
+.dashboard-main {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  gap: 20px;
+  padding: 10px;
+  padding-right: 30%;
+  background-color: rgb(248, 249, 250);
+}
+
+/* Tablet (≤1024px) */
+@media (max-width: 1024px) {
+  .dashboard-main {
+    grid-template-columns: 1fr 1fr;
+    padding-right: 10%;
+  }
+}
+
+/* Mobile (≤768px) */
+@media (max-width: 768px) {
+  .dashboard-main {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+}
+
+/* Small Mobile (≤480px) */
+@media (max-width: 480px) {
+  .dashboard-main {
+    padding: 5px;
+    gap: 10px;
+  }
+}

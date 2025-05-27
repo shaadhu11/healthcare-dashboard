@@ -1,3 +1,12 @@
+/* index.css */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb; /* light gray */
+}
+
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

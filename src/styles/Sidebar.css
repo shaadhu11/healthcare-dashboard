@@ -1,0 +1,159 @@
+.sidebar {
+  width: 300px;
+  background: rgb(226, 226, 226);
+  padding: 20px;
+  border-radius: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 110vh;
+}
+
+.sidebar-logo {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.icon {
+  font-size: 18px;
+  color: #5a5a89;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 0;
+  font-weight: 500;
+}
+
+
+/* 🌐 Responsive Sidebar Layout */
+
+/* For tablets (≤ 1024px) */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 16px;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .sidebar-logo {
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .nav-links li {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .sidebar-bottom {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 10px 0;
+  }
+}
+
+/* For mobile devices (≤ 768px) */
+/* @media (max-width: 768px) {
+  .sidebar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .nav-links li {
+    font-size: 14px;
+  }
+
+  .sidebar-logo {
+    font-size: 18px;
+  }
+
+  .sidebar-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+} */
+
+
+/* Hamburger button */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  margin: 16px;
+  cursor: pointer;
+  z-index: 999;
+  color: #333;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 260px;
+    background-color: #e2e2e2;
+    padding: 20px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 998;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .sidebar.closed {
+    transform: translateX(-100%);
+  }
+}

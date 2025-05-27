@@ -1,0 +1,123 @@
+.calendar-view {
+  background-color: rgb(226, 226, 226);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.month-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.calendar-day {
+  border-radius: 8px;
+  padding: 10px;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: rgba(175, 172, 223, 0.719);
+  box-sizing: border-box;
+}
+
+.date {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.time-slot {
+  background-color: #d7e8ff;
+  color: #0056b3;
+  padding: 4px 6px;
+  margin-top: 4px;
+  font-size: 12px;
+  border-radius: 6px;
+}
+
+.appointment-cards {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.appointment-card {
+  flex: 1 1 150px;
+  background-color: #f6faff;
+  padding: 14px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  max-width: 250px;
+}
+
+.appointment-card h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #0074cc;
+}
+
+.appointment-card p {
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.appointment-card span {
+  font-size: 13px;
+  color: #444;
+}
+
+/* Tablet view */
+@media (max-width: 1024px) {
+  .calendar-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .calendar-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .calendar-day {
+    padding: 8px;
+    min-height: 60px;
+  }
+
+  .time-slot {
+    font-size: 11px;
+    padding: 3px 5px;
+  }
+
+  .appointment-card {
+    flex: 1 1 100%;
+  }
+}
+
+/* Small Mobile view */
+@media (max-width: 480px) {
+  .calendar-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .appointment-card {
+    padding: 12px;
+  }
+
+  .month-heading {
+    font-size: 16px;
+  }
+}

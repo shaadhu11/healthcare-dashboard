@@ -1,0 +1,137 @@
+/* .activity-feed {
+  background-color:  rgb(226, 226, 226);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-top: 24px;
+}
+
+.activity-feed h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.activity-feed p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.bar-chart {
+  display: flex;
+  align-items: flex-end;
+  height: 120px;
+  gap: 10px;
+  background-color:  rgb(226, 226, 226);
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.bar {
+  width: 70px;
+  background-color: #4a90e2;
+  border-radius: 4px 4px 0 0;
+}
+.bar-label {
+  margin-top: 6px;
+  font-size: 15px;
+  color: #c7c5c5;
+}
+
+
+
+ */
+.activity-feed {
+  background-color: rgb(226, 226, 226);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-top: 24px;
+}
+
+.activity-feed h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.activity-feed p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.bar-chart {
+  display: flex;
+  align-items: flex-end;
+  height: 120px;
+  gap: 10px;
+  background-color: rgb(226, 226, 226);
+  border-radius: 10px;
+  padding: 12px;
+  overflow-x: auto; /* Allow horizontal scroll on small screens */
+}
+
+.bar {
+  width: 70px;
+  background-color: #4a90e2;
+  border-radius: 4px 4px 0 0;
+  flex-shrink: 0; /* Prevent bars from shrinking */
+}
+
+.bar-label {
+  margin-top: 6px;
+  font-size: 15px;
+  color: #c7c5c5;
+  text-align: center;
+  white-space: nowrap; /* Keep labels on one line */
+}
+
+/* Responsive styles */
+
+/* Tablets (width between 600px and 1024px) */
+@media (max-width: 1024px) and (min-width: 600px) {
+  .bar {
+    width: 50px;
+  }
+
+  .bar-label {
+    font-size: 13px;
+  }
+
+  .bar-chart {
+    height: 100px;
+    padding: 8px;
+  }
+}
+
+/* Mobile devices (width less than 600px) */
+@media (max-width: 599px) {
+  .activity-feed {
+    padding: 12px;
+  }
+
+  .activity-feed h3 {
+    font-size: 16px;
+  }
+
+  .activity-feed p {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  .bar-chart {
+    height: 90px;
+    padding: 6px;
+    gap: 8px;
+  }
+
+  .bar {
+    width: 35px;
+  }
+
+  .bar-label {
+    font-size: 11px;
+  }
+}
