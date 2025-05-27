@@ -7,6 +7,7 @@ import { FaLungs } from 'react-icons/fa';
 const statusColorMap = {
   ok: "green",
   issue: "red",
+  good:"orange",
 };
 
 const HealthStatusCards = () => {
@@ -17,11 +18,12 @@ const HealthStatusCards = () => {
           <div className="card-header">
 
             {card.icon}
+            
+            <h3>{card.title}</h3>
             <span
               className="line"
               style={{ backgroundColor: statusColorMap[card.status] }}
             ></span>
-            <h3>{card.title}</h3>
           </div>
           <p className="status">{card.statusText}</p>
           <p className="date">Last Checked: {card.date}</p>

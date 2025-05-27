@@ -26,8 +26,8 @@
 
 .card-header .line {
   width: 100px;
-  height: 10px;
-  border-radius: 10%;
+  height: 8px;
+  border-radius: 20%;
   background-color: #ccc; /* Add a fallback color if not styled dynamically */
 }
 
