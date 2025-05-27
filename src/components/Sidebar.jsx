@@ -60,7 +60,7 @@ const Sidebar = () => {
       <div className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
         <h2 className="sidebar-logo">
           <span style={{ color: 'turquoise' }}>Health</span>
-          <span>cure.</span>
+          <span>care.</span>
         </h2>
 
         <div className="sidebar-section">
