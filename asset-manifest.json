@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/healthcare-dashboard/static/css/main.9fff07c8.css",
+    "main.js": "/healthcare-dashboard/static/js/main.705c6365.js",
+    "static/js/453.1bdb1478.chunk.js": "/healthcare-dashboard/static/js/453.1bdb1478.chunk.js",
+    "static/media/humanAnatomy.png": "/healthcare-dashboard/static/media/humanAnatomy.cc1d7bb941f837a20670.png",
+    "index.html": "/healthcare-dashboard/index.html",
+    "main.9fff07c8.css.map": "/healthcare-dashboard/static/css/main.9fff07c8.css.map",
+    "main.705c6365.js.map": "/healthcare-dashboard/static/js/main.705c6365.js.map",
+    "453.1bdb1478.chunk.js.map": "/healthcare-dashboard/static/js/453.1bdb1478.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9fff07c8.css",
+    "static/js/main.705c6365.js"
+  ]
+}
